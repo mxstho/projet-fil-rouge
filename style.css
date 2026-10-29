@@ -1,0 +1,151 @@
+/* Fond */
+body {
+    background: #041821;
+    color: #F8F8F8;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid rgb(81, 81, 125);
+}
+
+#photographe {
+     text-transform: uppercase;
+}
+
+#photographe span {
+    color: #00CBA0;
+}
+
+header nav span{
+    margin: 10px;
+}
+
+/* Les polices */
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@media all and (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+
+/* Présentation */
+#presentation {
+    max-width: 700px;
+    margin: 40px auto 0;
+}
+
+/* Titre principal */
+#titre {
+    font-family: "Yeseva One", serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+/* Dernière ligne du titre */
+#titre span {
+    color: #00CBA0;
+}
+
+/* Paragraphe de présentation */
+#presentation p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #A0AAAD;
+    margin: 0;
+}
+
+
+/* Catégories de photographies */
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 25px auto 20px;
+}
+
+/* Liens des catégories */
+.categories a {
+    color: #F8F8F8;
+    text-decoration: none; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 8px 10px;
+}
+
+/* Catégorie sélectionnée */
+.categories a.active {
+    background-color: #00CBA0;
+    color: #041821;
+}
+
+
+/* Galerie de photos */
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Apparence des images */
+.galerie img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* Tablette */
+@media (min-width: 600px) and (max-width: 900px) {
+    .galerie {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+    .galerie {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galerie img:nth-child(n + 10) {
+        display: none;
+    }
+}
+
+/* Pied de page */
+.footer {
+    padding: 30px 0 20px;
+    color: #75858A;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.footer p {
+    margin: 4px 0;
+}
